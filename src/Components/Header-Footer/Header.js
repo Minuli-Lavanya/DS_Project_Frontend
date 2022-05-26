@@ -113,9 +113,9 @@ class Header extends Component {
                                 <>
                                     <Link className="navbar-icon account-label" to="/" style={{textDecoration:'none'}}><FontAwesomeIcon icon={faHome}  className={"mr-2"}/>Home</Link>
                                     <Link className="navbar-icon account-label" to="/HotelDetails" style={{textDecoration:'none'}}><FontAwesomeIcon icon={faHotel}  className={"mr-2"}/>Hotels</Link>
-                                    <Link className="navbar-icon account-label" to="/AllReservationInfo" style={{textDecoration:'none'}}><FontAwesomeIcon icon={faListAlt}  className={"mr-2"}/>Rooms</Link>
-                                    <Link className="navbar-icon account-label" to="/AddReservations" style={{textDecoration:'none'}}><FontAwesomeIcon icon={faListAlt}  className={"mr-2"}/>Resrvations</Link>
-                                    <Link className="navbar-icon account-label" to="/AddTaxi" style={{textDecoration:'none'}}><FontAwesomeIcon icon={faTaxi}  className={"mr-2"}/>Taxi</Link>
+                                    {/* <Link className="navbar-icon account-label" to="/AllReservationInfo" style={{textDecoration:'none'}}><FontAwesomeIcon icon={faListAlt}  className={"mr-2"}/>Rooms</Link> */}
+                                    {/* <Link className="navbar-icon account-label" to="/AddReservations" style={{textDecoration:'none'}}><FontAwesomeIcon icon={faListAlt}  className={"mr-2"}/>Resrvations</Link> */}
+                                    {/* <Link className="navbar-icon account-label" to="/TaxiReservationConfirm" style={{textDecoration:'none'}}><FontAwesomeIcon icon={faTaxi}  className={"mr-2"}/>Taxi</Link> */}
                                     
                                 </>
                             }

@@ -58,7 +58,7 @@ input[type=text] {
 	font: 20px;
     
 }
-#submit-button{
+.submit-button-room{
     background-color: #171717; /* Green */
     color: rgb(255, 255, 255);
     border: 1px solid black;
@@ -77,13 +77,30 @@ input[type=text] {
     
 }
 
-#heading{
+#heading-room{
     font-size: 40px;
     font-weight: bold;
-    margin-left: 7cm;
+    margin-left: 5cm;
 
 }
 
 #sec2{
     margin-left: 90px;
+}
+
+.btn-2{
+  background-color: #333333; /* Green */
+  border: none;
+  color: rgb(253, 253, 253);
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 5cm;
+}
+.btn-2:hover{
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border: 1px solid rgb(0, 0, 0);
 }

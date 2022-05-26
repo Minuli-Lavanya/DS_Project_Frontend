@@ -20,6 +20,17 @@ import ViewResrvationsInfo from './ReservationInfo/ViewReservation';
 import EditReservationInfo from './ReservationInfo/EditReservationInfo';
 import AllReservationInfo from './ReservationInfo/AllReservationInfo';
 import SingleDetailedRoom from './ReservationInfo/DetailedRoom';
+import LocationSearchModal from './Map/LandingPage';
+import TaxiReservationConfirm from './Taxi/TaxiReservationConfirm';
+import AddPayment from './Payment/AddPayment';
+import AddEmail from './EmailService/EmailService'
+import AddMobile from './MobileService/AddMobile'
+
+
+
+import Booking from './Reservations/Booking';
+import ViewBooking from './Reservations/ViewBooking';
+
 
 
 class FrontEnd extends Component {
@@ -67,12 +78,20 @@ class FrontEnd extends Component {
                         
                         <Route path="/editHotels/:id" component={EditHotels}/>
                         <Route path="/SingleDetailedHotel/:id" component={SingleDetailedHotel}/>
-                        
+                        {/*  */}
+                        <Route path="/Map" component={LocationSearchModal}/>
                          
                         {/*  */}
 
                         <Route path="/AddTaxi" component={AddTaxi}/>
                         <Route path="/ViewTaxi" component={viewTaxi}/>
+                        <Route path="/TaxiReservationConfirm" component={TaxiReservationConfirm}/>
+
+                        
+
+                        {/*  */}
+                        <Route path="/Booking/:id" component={Booking}/>
+                        <Route path="/ViewBooking" component={ViewBooking}/>
 
                         {/*  */}
                        
@@ -81,6 +100,10 @@ class FrontEnd extends Component {
 
                         <Route path="/ViewAll/logout" component={Login}/>
                         <Route path="/ViewAll/login" component={Login}/>
+			
+			<Route path="/payments" component={AddPayment}/>
+                        <Route path="/email" component={AddEmail}/>
+                        <Route path="/mobile" component={AddMobile}/>
                         
 
 

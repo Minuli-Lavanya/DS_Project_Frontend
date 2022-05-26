@@ -3,6 +3,8 @@ import axios from "axios";
 import {useHistory} from 'react-router-dom';
 import './Reservation.css'
 
+import '../ReservationInfo/DetailedRoom'
+
 export default function AddReservations() {
 
     const [tname, setname,] = useState("");
@@ -14,6 +16,7 @@ export default function AddReservations() {
     const [noOfChild, setnoOfChild] = useState("");
     const [noOfRooms, setnoOfRooms] = useState("");
     const [roomType, setroomType] = useState("");
+
     
     
     const history = useHistory();
@@ -33,13 +36,17 @@ export default function AddReservations() {
             noOfChild, 
             noOfRooms,
             roomType,
+
+            // id,
+            // unitPrice
+
         }
 
         
 
         axios.post("http://localhost:8081/hotel/reservation", newReservation).then(()=>{
             alert("Details Added");
-            history.push('/Reservations');
+            history.push('/TaxiReservationConfirm');
 
             
         }).catch((err)=>{
@@ -57,6 +64,7 @@ export default function AddReservations() {
             <div id='sec1'>
 
                 <form onSubmit={sendData} id="form-reservation">
+
 
                     <br></br>
                     <span id='head' style={{'textAlign':'center'}}>Reservation Details</span>

@@ -95,3 +95,38 @@ input[type=text] {
   height: 1.2cm;
 
 }
+
+.btn-3{
+  background-color: #333333; /* Green */
+  border: none;
+  color: rgb(253, 253, 253);
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 8cm;
+}
+.btn-3:hover{
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.link-5{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 13, 109);
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 1px;
+  width: 11rem;
+  margin-left: 25rem;
+  margin-top: 3rem;
+}
+
+.link-5:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(150, 0, 0);
+  text-decoration: none;
+
+}

@@ -26,6 +26,7 @@ export default class AllReservationInfo extends Component {
         this.props.history.push(`/SingleDetailedRoom/${id}`);
        
     }
+    
 
     
     render(){

@@ -106,6 +106,7 @@ export default class ViewResrvationsInfo extends Component {
                                         <td>
                                             <button  style={{background: "#1c3746", fontSize: ".84rem", borderRadius: "10px"}} className="btn btn-secondary" 
                                             onClick={(e)=>{this.updateRoom(p.id)}}> <FontAwesomeIcon icon={faEdit}  className={"mr-2"}/>Update</button>
+                                            
                                             <button   style={{background: "#f01c1c", marginLeft: "15px", fontSize: ".84rem", borderRadius: "10px"}} className="btn btn-secondary"
                                             onClick={() =>this.onDelete(p.id)}><FontAwesomeIcon icon={faTrash}  className={"mr-2"}/>Delete </button>
                                             

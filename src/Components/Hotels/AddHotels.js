@@ -4,7 +4,7 @@ import "./hotel.css"
 import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {useHistory} from 'react-router-dom';
-import { faLandmark, faLocationArrow, faSearchLocation } from '@fortawesome/free-solid-svg-icons';
+import {faLocationArrow} from '@fortawesome/free-solid-svg-icons';
 export default function AddHotels() {
 
 
@@ -116,10 +116,10 @@ export default function AddHotels() {
                                 setaddress(e.target.value);
                             }}
                             />
-                        </div>
-                        <div>
+                        </div><br></br>
+                        <div id='location'>
 
-                            <Link className="dropdown-item" to=""><FontAwesomeIcon
+                            <Link className="dropdown-item" to="/Map"><FontAwesomeIcon
                             icon={faLocationArrow} className={"mr-2"}/> Add Location</Link>
                         </div>
                     </div><br></br>

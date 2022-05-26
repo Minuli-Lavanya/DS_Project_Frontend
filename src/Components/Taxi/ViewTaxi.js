@@ -16,7 +16,7 @@ export default class viewTaxi extends Component {
 
     
     componentDidMount(){
-        axios.get('http://localhost:8081/hotel/taxi').then(response=>{
+        axios.get('http://localhost:8081/taxi').then(response=>{
             this.setState({taxi: response.data})
         }).catch(function (error){
             console.log(error);
@@ -24,7 +24,7 @@ export default class viewTaxi extends Component {
     }
 
     componentDidUpdate(){
-        axios.get('http://localhost:8081/hotel/taxi').then(response =>{
+        axios.get('http://localhost:8081/taxi').then(response =>{
             this.setState({taxi:response.data})
         }).catch(function (error){
             console.log(error);
@@ -38,7 +38,7 @@ export default class viewTaxi extends Component {
 
     onDelete=(id) =>{
         if(window.confirm("Are You Sure Want to Delete !")){
-            axios.delete(`http://localhost:8081/hotel/taxi/${id}`).then((res)=>{
+            axios.delete(`http://localhost:8081/taxi/${id}`).then((res)=>{
                 this.setState({taxi: this.state.taxi.filter(hotel => hotel.id !== id)});
                 this.props.history.push('/ViewTaxi');
                 
@@ -70,11 +70,7 @@ export default class viewTaxi extends Component {
                 
                     {/* <table className="table table-hover"> */}
                     <Table bordered hover size="sm" style={{width: "1150px", marginLeft: "300px", borderRadius: "12px", boxShadow: "0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2)"}}>
-                        <thead>
-                            <tr>
-                            <th colspan="6" scope="col" style={{fontSize: "1.3rem"}}>taxi</th>
-                            </tr>
-                        </thead>
+                        
                         <thead>
                             <tr>
                             
@@ -83,7 +79,8 @@ export default class viewTaxi extends Component {
                             <th scope="col">Vehicle Type</th>
                             <th scope="col">No Of Passengers</th>
                             <th scope="col">Pick-Up Location</th>
-                            <th scope="col">Drop</th>
+                            <th scope="col">Drop Location</th>
+                            <th scope="col">Action</th>
                             
                                 
                             </tr>
@@ -105,6 +102,7 @@ export default class viewTaxi extends Component {
                                      
                                         
                                         <td>
+
                                             <button style={{background: "#1c3746", fontSize: ".84rem", borderRadius: "30px"}} className="btn btn-secondary" onClick={(e)=>{this.updateTaxi(p.id)}}> Edit</button>
                                             <button style={{background: "#f01c1c", marginLeft: "15px", fontSize: ".84rem", borderRadius: "30px"}} className="btn btn-secondary" onClick={() =>this.onDelete(p.id)}> Delete</button>
                                             

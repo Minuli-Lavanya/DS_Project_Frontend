@@ -13,6 +13,11 @@
     margin-left: 10cm;
     margin-top: 2cm;
 }
+
+#sec4{
+  margin-left: 5cm;
+  margin-top: 2cm;
+}
 #form-hotels{
 
     border: 2px solid rgb(220, 220, 220);
@@ -104,6 +109,35 @@ input[type=text] {
 
 }
 
+#heading-mobile{
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 5cm;
+
+}
+
+#heading-email{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 3cm;
+
+}
+
+#heading-mobile-2{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 4cm;
+
+}
+
+#heading-payment{
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 5cm;
+
+}
+
+
 #heading2{
 
   font-size: 35px;
@@ -178,6 +212,20 @@ input[type=text] {
   font-size: 16px;
 }
 
+.btn-4{
+  position: absolute;
+  background-color: #333333; /* Green */
+  border: none;
+  color: rgb(253, 253, 253);
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 5cm;
+  margin-left: 5cm;
+}
+
 .btn-1:hover{
   color: rgb(61, 61, 61);
   background-color: #ffffff;
@@ -189,3 +237,14 @@ input[type=text] {
   height: 1.2cm;
 
 }
+
+#location{
+  border: 1px solid #171717;
+  padding: 10px;
+  border-radius: 30px;
+  width: 13rem;
+  margin-left: 11.5rem;
+
+}
+
+

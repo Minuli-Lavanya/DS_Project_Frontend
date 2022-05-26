@@ -22,6 +22,13 @@ export default class SingleDetailedRoom extends Component {
 
         };
 
+        this.BookRoom = this.BookRoom.bind(this);
+
+    }
+
+    BookRoom(id){
+        this.props.history.push(`/Booking/${id}`);
+       
     }
 
     componentDidMount(){
@@ -45,7 +52,7 @@ export default class SingleDetailedRoom extends Component {
             });
     }
 
-    
+   
     render() {
         return(
 
@@ -60,20 +67,6 @@ export default class SingleDetailedRoom extends Component {
                     <div className={"box-view"}>
                         <br></br>
                         <span id='heading2' style={{'marginLeft':'3cm'}}>{this.state.roomType}</span><br></br>
-                                
-
-                        {/* <div className={"Text-view-2"}>
-                            <section className={"Text-view-3"}> ID :hotel-ID_0{this.state.id}</section>
-                            <section className={"Text-view-3"}> Hotel Name :{this.state.name}</section>
-                            <section className={"Text-view-3"}> Email :{this.state.email}</section>                        
-                            <section className={"Text-view-3"}> Tep :{this.state.telNo}</section>
-                            <section className={"Text-view-3"}> Region : {this.state.destination}</section>
-                            <section className={"Text-view-3"}> Address : {this.state.address}</section>
-                            <section className={"Text-view-3"}> Description : {this.state.description}</section>
-                            
-                        
-                        </div> */}
-
 
 
                         <br></br>
@@ -105,13 +98,18 @@ export default class SingleDetailedRoom extends Component {
                            
                         </table>
 
-                        
-                        <div>
+                        <br></br><br></br>
+                        {/* <div>
                             
 
-                        <Link className={"link-1"} to="/AllReservationInfo"><FontAwesomeIcon
-                            icon={faListAlt} className={"mr-2"}/> View Room Details</Link>
-                        </div>
+                            <Link className={"link-1"} to="/AddReservations"><FontAwesomeIcon
+                                icon={faListAlt} className={"mr-2"}/> Book Now</Link>
+                        </div> */}
+
+
+                        <button className="btn-2" 
+                        onClick={(e)=>{this.BookRoom(this.state.id)}}>Book Now</button>
+
                         
                     </div> 
 

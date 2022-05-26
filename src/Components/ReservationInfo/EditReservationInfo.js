@@ -101,9 +101,7 @@ export default class EditReservationInfo extends Component {
 
             <br></br>
             <br></br>
-            <h2 id="headertext">
-                Update Room Details
-            </h2>
+            
             
             <div id='sec1'>
             
@@ -111,7 +109,7 @@ export default class EditReservationInfo extends Component {
                 <form onSubmit={this.onSubmit} id="form-rooms">
 
                         <br></br>
-                        <span id='heading' style={{'textAlign':'center'}}>Room Details</span>
+                        <span id='heading-room' style={{'textAlign':'center'}}>Update Room Details</span>
                         <br></br><br></br>
 
                     <div id='sec2'>
@@ -187,7 +185,7 @@ export default class EditReservationInfo extends Component {
 
                     </div>
 
-                    <button type="submit" className="btn btn-primary" >Update</button>
+                    <button type="submit" className="submit-button-room" >Update</button>
                 </form><br></br>
 
             </div>

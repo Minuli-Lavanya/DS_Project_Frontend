@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import axios from "axios";
-
+import './rooms.css'
 import {useHistory} from 'react-router-dom';
 
 
@@ -47,6 +47,8 @@ export default function AddReservationInfo() {
                         <span id='heading' style={{'textAlign':'center'}}>Room Details</span>
                         <br></br><br></br>
 
+                        
+
                     <div id='sec2'>
                         <div>
                             <label htmlFor="roomType">Room Type</label><br></br>
@@ -57,7 +59,7 @@ export default function AddReservationInfo() {
                                 <option value="Single-Room">Single Room</option>
                                 <option value="Double-Room">Double Room</option>
                                 <option value="Triple-Room">Triple Room</option>
-                                <option value="Family-Rroom">Family Room</option>
+                                <option value="Family-Room">Family Room</option>
                             </select>
                         </div>
 

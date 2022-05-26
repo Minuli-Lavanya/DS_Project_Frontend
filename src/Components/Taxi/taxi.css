@@ -1,0 +1,46 @@
+.taxi-image{
+    position: absolute;
+    margin-left: 52rem;
+    margin-top: -25rem;
+}
+#topic1{
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(210, 160, 67);
+    margin-top: 6rem;
+}
+    
+#div1{
+    margin-left: 10rem;
+    margin-top: 6rem;
+}
+
+#div2{
+    margin-left: 15rem;
+    margin-top: 5rem;
+    font-size: 30px;
+}
+
+#sec3{
+    
+    margin-top: -3.5rem;
+    
+}
+
+.link-4{
+    color: rgb(255, 255, 255);
+    background-color: rgb(253, 228, 158);
+    font-size: 40px;
+    padding: 12px;
+    border-radius: 15px;
+    width: 11rem;
+    margin-left: 14rem;
+}
+
+.link-4:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(210, 160, 67);
+    text-decoration: none;
+  
+}
+
